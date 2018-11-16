@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(190, 190, 190);
+  padding: 100px;
+  font-family: 'Barlow';
+}
+p {
+  font-size: 13px;
+}
+.both {
+  width: 9em;
+  float: left;
+  padding: 0.5em;
+  position: relative;
+  box-shadow: -7px 7px 7px 3px gray; 
+}
+.no1 {
+  background: rgb(168, 181, 255);
+  color: rgb(39, 39, 77);
+  z-index: 1;
+  top: 1em;
+}
+.no2 {
+  background: rgb(248, 139, 100);
+  color: rgb(209, 58, 3);
+  z-index: 2;
+  bottom: 6em;
+  left: -2em;
+}
+.ontop1, .ontop2 {
+  margin-bottom: 5em;
+}
+h1 {
+  font-size: 20px;
+}
+h1.ontop1::before {
+  content: "";
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  float: left;
+  background: rgb(39, 39, 77);
+  top: 0.4em;
+  margin-right: 0.3em;
+}
+h1.ontop2::before {
+  content: "";
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  float: left;
+  background: rgb(209, 58, 3);
+  top: 0.4em;
+  margin-right: 0.3em;
+}
+.time1 {
+  border-bottom: 1px solid rgb(39, 39, 77);
+}
+.time2 {
+  border-bottom: 1px solid rgb(209, 58, 3);
+}
+.left1 {
+  float: left;
+}
+.right1 {
+  float: right;
+}
+.timeline1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  margin-top: 0.5em;
+}
